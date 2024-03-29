@@ -26,7 +26,42 @@ This file contains the precipitation and irrigation data.
 ### Data_in_Code_Format ###
 These files contain all the same information as the Data_Excel file, but they are organized into yearly files, as this is how it is organized and written in my python script.  
 ## Python_Code ##
-This folder contains all python code that was used for analysis and figure creation in this study.  All code in this study will need to modified to have your path name input for where files were drawn from.  All areas that need modification are written in the script as "YOUR PATH", "YOUR PATH TO MAKE", and "YOUR PATH TO SAVE".  Please note that there a couple scripts dependent on a file created in a prior script, these are listed below:
-
+This folder contains all python code that was used for analysis and figure creation in this study.  The python version used was python 3.8.10.  All code in this study will need to modified to have your path name input for where files were drawn from.  All areas that need modification are written in the script as "YOUR PATH", "YOUR PATH TO MAKE", and "YOUR PATH TO SAVE".  Please note that there a couple scripts dependent on a file created in a prior script, these are listed below:
+SWC_95Confidence_Interval.py must by run prior to N0_Time_Series_Individual_Years and N0_Continuous_for_All_Time_Series
 ### pyenvironment.txt ###
-This file contains the python environment and all packages to be able to run the code.  
+This file contains the python environment and all packages to be able to run the code.  To install these packages run the following script (this was done in Visual Studio Code): 
+pip install -r pyenvironment.txt
+#### BWE_Time_Series_and_Error_Analysis.py ####
+This creates BWE time series figures as well as plotting their 95% confidence intervals.
+#### fb.py ####
+This analyzes data, performs calculations, and plots the correction factor created in this study.
+#### Gravimetric_Sampling.py ####
+This creates N0 vs BWE for gravimetric sampling as well as performs all weighting on gravimetric data.
+#### Gravimetric_TDR_Comparison.py ####
+This creates the plots comparing gravimetric data to TDR data. 
+#### Multiyear_N0vsBWE.py ####
+This plots N0 vs BWE for all years in each field as one plot per field.  It has gravimetric and TDR data.
+#### N_N0_BWE_Plots.py ####
+This plots Npvi, N0, and BWE on the same plot.  
+#### N0_Continuous_for_All_Time_Series.py ####
+This plots continuous N0 data for all times, including those not used in this study, with one plot per field with 95% confidence intervals.
+#### N0_Time_Series_Individual_Years.py ####
+This creates a plot for every individual year in every individual field with 95% confidence intervals.
+#### N0_vs_BWE.py ####
+This creates N0 vs BWE plots for every field in every individual year.  
+#### NPVI_Time_Series.py ####
+This creates Npvi date time series for every individual year in every individual field. 
+#### Precipitation_Irrigation_TDR_Time_Series.py ####
+This creates time series plots of TDR data as a scatterplot and precipitation and irrigation data as bar charts.
+#### SWC_95Confidence_Interval.py ####
+This creates the 95% confidence intervals plots and related files for the soil water content values from TDR.  
+#### TDR_All_Depths_Shown_Individually_Time_Series.py ####
+This creates a plot of all TDR data with each depth shown individually.
+#### TDR_Continuous_Time_Series.py ####
+This plots the TDR data used in the study as a time series for all years and time continuously.
+#### TDR_Time_Series_Individual_Fields.py ####
+This plots the TDR time series for all individual fields and years.  
+#### Vapour_Pressure_Deficit.py ####
+This plots the vapour pressure deficit information for the future studies portion of this study.  It is not directly used in this study, but is a future direction.
+## Supplementary_Materials.docx ##
+This is a Microsoft Word document that contains all supplementary figures, equations, and tables for this study.  
