@@ -25,3 +25,8 @@ This contains the Npvi neutron counts from all 3 sites as well as any associated
 This file contains the precipitation and irrigation data.  
 ### Data_in_Code_Format ###
 These files contain all the same information as the Data_Excel file, but they are organized into yearly files, as this is how it is organized and written in my python script.  
+## Python_Code ##
+This folder contains all python code that was used for analysis and figure creation in this study.  All code in this study will need to modified to have your path name input for where files were drawn from.  All areas that need modification are written in the script as "YOUR PATH", "YOUR PATH TO MAKE", and "YOUR PATH TO SAVE".  Please note that there a couple scripts dependent on a file created in a prior script, these are listed below:
+
+### pyenvironment.txt ###
+This file contains the python environment and all packages to be able to run the code.  
